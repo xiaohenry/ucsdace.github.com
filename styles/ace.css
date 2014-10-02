@@ -1,0 +1,57 @@
+
+body{
+    background-color: black;
+}
+hr{
+    width: 50%;
+}
+/*NAVAR*/
+#nav-header{
+    background-color: black;
+    border-color: black;
+    border-radius: 0;
+} 
+/*NAVBAR NAME - ACADEMIC CONNECTION OF ENGINEERS*/
+#nav-name{
+    color: white;
+
+}
+/*NAVBAR LINKS (ON RIGHT SIDE)*/
+.nav-link{
+    color: white !important;
+}
+/*BIG COVER PHOTO*/
+#cover-photo{
+    background-image: url("../img/ace-cross-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+}
+/*MAJOR DESCRIPTION (ABOUT/EVENTS/ETC)*/
+.description{
+    max-width: 900px;
+    text-align: center;
+}
+
+.content-title{
+    font-size: 45px;
+    color: white;
+    color: pink;
+}
+
+.content-body{
+    font-size: 24px;
+    text-align: center;
+    color: white;
+}
+.row{
+    margin-bottom: 50px;
+}
+.content-highlight{
+    color: red;
+}
+.left{
+    text-align: left;
+    margin-left: 50px;
+}
