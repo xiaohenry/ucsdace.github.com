@@ -12,7 +12,7 @@ PROBLEMS:
 - change fonts, colors, sizing
 - think of creative layout for events
 - add footer
-- add contact
+- add contact html code -> make the contact link trigger the contact.html form rather than having it on the same page 
 
 -->
 <html>
@@ -26,8 +26,10 @@ PROBLEMS:
     
     <!-- CSS -->
     <link href="styles/bootstrap.min.css" rel="stylesheet" media="screen">
+
     <link href="styles/ace.css" rel="stylesheet">
     <!-- FONTS -->
+     <link href="http://fonts.googleapis.com/css?family=Economica:400,700" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Kreon' rel='stylesheet' type='text/css'>
     <!-- FAVICON -->
 
@@ -48,7 +50,7 @@ PROBLEMS:
                         <span class="icon-bar"></span>
                     </button>
 
-                </div>
+            </div>
 
                 <div class="collapse navbar-collapse navHeaderCollapse">
                     <ul class="nav navbar-nav navbar-right" style="margin-right: 50px;">
@@ -57,55 +59,118 @@ PROBLEMS:
                             <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="smooth-scroll">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                        <li class="smooth-scroll">
-                            <a class="nav-link" href="#events">Events</a>
-                        </li>
+                         <a class="nav-link" href="#contact-me" data-toggle="modal">Contact</a>
+                     </li>
+                     <li class="smooth-scroll">
+                        <a class="nav-link" href="#events">Events</a>
+                    </li>
 
-                    </ul>
-                </div>
+                </ul>
             </div>
         </div>
-
-
-        <!------ JUMBOTRON -->
-<!--    <div id="jumbotron" class="container-fluid">
-        <div class="jumbotron text-center">
-            <h1 style="font-family: Andale Mono, Lucida Sans Unicode; font-weight: 900">Hello!</h1>
-            <p style="padding-top: 20px; padding-left:30px; padding-right: 30px;">
-                </p>
-                <div ng-mouseover="changeColor('#191919')" class="bar" style="background-color:#191919;" >
-                </div>
-                <div ng-mouseover="changeColor('#8E2239')" class="bar" style="background-color:#8E2239;">
-                </div>
-                <div ng-mouseover="changeColor('#AA7570')" class="bar" style="background-color:#AA7570;">
-                </div>
-                <div ng-mouseover="changeColor('#38595E')" class="bar" style="background-color:#38595E;">
-                </div>
-                <div ng-mouseover="changeColor('#964B6B')" class="bar" style="background-color:#964B6B;">
-                </div>
-                <div ng-mouseover="changeColor('#6D748C')" class="bar" style="background-color:#6D748C;">
-                </div>
-                <br>
-                <br>
-        </div>  
     </div>
--->
-<div class="jumbotron" id="cover-photo">
-    <div class="text-center">
-        <img src="img/ace-cross-logo.png">
-    </div>
-</div>
 
-<!------ EVENTS -->
-<section class="row" id="about" style="margin-top: -150px;">
-    <div class="col-xs-12">
-        <div class="container description">
-        <div class="content-title">
-            ABOUT US
+<!-- <div class="jumbotron" id="cover-photo"> -->
+<!--     <div class="row text-center">
+        <div class="col-xs-12">
+            <img src="img/ace-cross-logo.png">
         </div>
-        <br>
+    </div> -->
+    <!-- </div> -->
+
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-xs-12" id="cover-photo">
+
+            <img style="max-width:100%; height:auto" src="img/ace-cross-logo.png">
+        </div>
+    </div>
+</div> -->
+
+<!------ SLIDESHOW -->
+<section id="slideshow">
+    <div class="container" style="max-width: 900px">
+        <div id="carousel-main" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-main" data-slide-to="1"></li>
+            <!-- <li data-target="#carousel-main" data-slide-to="2"></li> -->
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/geisel.jpg" alt="Slide 1">
+              <div class="carousel-caption">
+                UC San Diego<br>Academic Connection of Engineers
+            </div>
+            </div>
+            <div class="item">
+                <img src="img/ace-cross-logo.png" alt="Slide 2">
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+
+        </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-main" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+</a>
+<a class="right carousel-control" href="#carousel-main" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+</a>
+        </div>
+</div>
+</section>
+
+<hr style="margin-top: 25px">
+
+
+<!------ ABOUT -->
+<section class="row" id="about">
+    <div class="col-xs-12" style="padding-top: 50px; padding-bottom:50px">
+        <div class="container description">
+            <div class="content-title">
+                ABOUT US
+            </div>
+            <br>
+            
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                <div class="pillar glyphicon glyphicon-globe"></div>
+                <div class="pillar-description">
+                        <span class="pillar-title">EXPAND</span>
+                        <br>
+                        <!----description-->
+                        Meet new people and make worthwhile connections with fellow engineers
+                </div>    
+                </div>
+
+                <div class="col-sm-4 col-xs-12">
+                    <div class="pillar glyphicon glyphicon-book"></div>
+                    <div class="pillar-description">
+                        <span class="pillar-title">LEARN</span>
+                        <br>
+                        <!----description-->
+                        Collectively work together to inspire and motivate one another to keep learning
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-xs-12">
+                    <div class="pillar glyphicon glyphicon-flag"></div>
+                    <div class="pillar-description">
+                        <span class="pillar-title">REVOLUTIONIZE</span>
+                        <br>
+                        <!----description-->
+                        Change the way engineers are perceived by breaking down social stigmas while pushing each other to become academic leaders
+                    </div>
+                </div>
+            </div>
+
+            <br>
             <div class="content-body">
                 <!-- DESCRIPTION -->
                 The Academic Connection of Engineers (ACE) is a non-profit academic organization which aims to create a social and academically collaborative network among undergraduate engineering students at the University of California, San Diego.
@@ -130,20 +195,31 @@ PROBLEMS:
     </div>    
 </section>
 
+<!------ OUR TEAM -->
+<!-- <section class="row" id="team">
+    <div class="col-xs-12" style="padding-top:50px;">
+        <div class="container description" >
+            <div class="content-title">
+                OUR TEAM   
+            </div>
+        </div>
+    </div>
+</section> -->
 
 
-<!------ ABOUT US -->
+
+<!------ EVENTS -->
 <section class"row" id="events">
     <!-- <div class="col-xs-12"> -->
-        
-        <div class="container description">
+
+    <div class="container"><!--description-->
         <div class="content-title">
             EVENTS
         </div>
         <br>
 
-         <!-- EVENT 1 -->
-         <div class="row event">
+        <!-- EVENT 1 -->
+        <div class="row event">
             <div class="col-xs-12">
 
                 <div class="cal">
@@ -206,55 +282,62 @@ PROBLEMS:
                     <div class="event-title">
                         &nbspNov 17 - Nov 23 Los Angeles Tech Week
 
-                        <a style="float:left" href="http://www.techweek.com/losangeles/city-partners/?utm_source=ucsdace&utm_medium=citypartners&utm_term=2014&utm_campaign=la"><img src="http://techweek.com/img/badges/tw_la14_partnerbadge.png" border="0" style="width: 70px;" alt="Techweek Los Angeles"></a>
+                        <a style="float:left;" href="http://www.techweek.com/losangeles/city-partners/?utm_source=ucsdace&utm_medium=citypartners&utm_term=2014&utm_campaign=la"><img src="http://techweek.com/img/badges/tw_la14_partnerbadge.png" border="0" style="width: 70px;" alt="Techweek Los Angeles"></a>
                     </div>
                     <div class="event-info">
-                        &nbspLA Tech Week is being held Nov 17 - Nov 23. Join many engineers and brilliant minds in celebrating &nbspinnovation.
+                        &nbspLA Tech Week is being held Nov 17 - Nov 23. Join engineers and many brilliant minds <br>in celebrating innovation and technology. 
                     </div>
                 </div>
             </div>
         </div>        
-
-
-    </div>
-    <div class="container description">
-        <div class="content-body">
-
-            
-
-
-        </div>
-    <!-- </div> -->
-
-
-
-</div>    
+    </div>    
 </section>
 
-<!-- </div> -->
-<!------ PICTURES-->
+
+<!------ CONTACT FORM -->
+<div class="modal fade" id="contact-me" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><strong>Contact Us!</strong></h2>
+            </div>
+            <div class="modal-body">
+                <h3>Feel free to contact us with any questions!
+                <br><br>Email: ace@ucsd.edu</h3>
+
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-default" data-dismiss="modal">
+                    <h4>Close</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!------ FOOTER -->
-<div id="footer" class="navbar navbar-default navbar-fixed-bottom">
-        <div class="container-fluid">
-            <p class="navbar-text">Created by members of ACE</p>
+<div id="footer" class="navbar navbar-default navbar-bottom">
+    <div class="container-fluid">
+        <p class="navbar-text" style="color:white;">Created by members of ACE</p>
         <ul class="nav navbar-nav navbar-right" style="margin-right: 50px;">
             <li>
                 <!-- <a id="facebook" href="#" class="navbar-btn btn-danger btn pull-right">Like us on Facebook!</a> -->
-                <a id="facebook" href="https://www.facebook.com/AcademicConnectionofEngineers" target="none">Like us on Facebook!</a>
+                <a style="color:white;"id="facebook" href="https://www.facebook.com/AcademicConnectionofEngineers" target="none">Like us on Facebook!</a>
             </li>
-          
         </ul>
-
-        </div>
     </div>
+</div>
+
 
 
 <!-- LOAD JS FILES -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script type="text/javascript" src="./js/jqBootstrapValidation.js"></script><script type="text/javascript" src="./js/contact_me.js"></script>
 <script type="text/javascript" src="js/ace.js"></script>
+<script type="text/javascript" src="js/contact_me.js"></script>
 
 </body>
 </html>

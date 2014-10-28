@@ -8,3 +8,7 @@ $(function() {
         event.preventDefault();
     });
 });
+
+$('.carousel').carousel({
+  interval: 5000
+});

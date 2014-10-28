@@ -4,33 +4,86 @@
     src: url("../fonts/rosario/rosario-regular.otf");
 }*/
 @font-face{
-    font-family: "League-Gothic";
-    src: url("../fonts/League-Gothic/LeagueGothic-Regular.otf");
+    font-family: "Blessed";
+    src: url("../fonts/billy-argel_blessed-day/BLESD___.otf");
+}
+@font-face{
+    font-family: "Vibes";
+    src: url("../fonts/typesetit_great-vibes/GreatVibes-Regular.ttf");
 }
 body{
-    background-color: black;
-    font-family: Verdana, sans-serif;
+    background-color: #F6F6F6;
+    font-family: Economica, sans-serif;
     font-weight: 500;
-    padding-bottom: 100px;
+    padding-top: 90px;
+    height: 100%;
 }
 hr{
-    width: 50%;
+    width: 100%;
+    height: 8px;
+    background-color: #3d0000;
+    border-color: #3d0000;
 }
 /*NAVAR*/
 #nav-header{
-    background-color: black;
-    border-color: black;
+    background-color: #3d0000;
+    border-color: #3d0000;
     border-radius: 0;
 } 
 /*NAVBAR NAME - ACADEMIC CONNECTION OF ENGINEERS*/
 #nav-name{
-    font-size: 26px;
-    color: #cca300;
+    margin-top: 8px;
+    font-family: Blessed;
+    font-size: 55px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #F6F6F6;
 
 }
 /*NAVBAR LINKS (ON RIGHT SIDE)*/
 .nav-link{
-    color: white !important;
+    margin-top: 8px;
+    color: #F6F6F6 !important;
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-family: Blessed;
+}
+
+/*get rid of default carousel shadows*/
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+/*carousel images*/
+.carousel-inner>.item>img, .carousel-inner>.item>img {
+display: block;
+height: 500px;
+max-width: 100%;
+width: 100%;
+border-radius: 7px;
+}
+.carousel-caption{
+    top: 0;
+    font-size: 24px;
+}
+
+#about{
+    margin-top: -15px;
+    background-color: #2B2B2B;
+    margin-bottom: 0;
+}
+.pillar{
+    color: white;
+    font-size: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 45px;
+}
+.pillar-title{
+    font-size: 30px;
+}
+.pillar-description{
+    margin-top: 15px;
+    color: white;
     font-size: 24px;
 }
 /*BIG COVER PHOTO*/
@@ -41,23 +94,25 @@ hr{
     /*background-size: cover;*/
     /*height: 800px;*/
     background-color: black;
-    margin-top: -175px;
-}
+    /*margin-top: -175px;*/
+} 
+
 /*MAJOR DESCRIPTION (ABOUT/EVENTS/ETC)*/
 .description{
-    max-width: 1200px;
-    text-align: justify;
+    max-width: 900px;
+    /*text-align: justify;*/
+    text-align: center;
 }
 
 .content-title{
-    font-size: 26px;
-    color: #cca300;
+    font-size: 45px;
+    color: #F6F6F6;
 }
 
 .content-body{
-    font-size: 18px;
+    font-size: 24px;
     /*text-align: center;*/
-    color: white;
+    color: #F6F6F6;
 }
 .row{
     margin-bottom: 50px;
@@ -73,10 +128,12 @@ hr{
 }
 
 /*CALENDAR*/
+.event{
+    white-space: nowrap;
+}
 .cal{
     width: 65px;
-    height: 72px;
-    background-color: white;
+    background-color: #E9E581;
     border-radius: 5px;
     display: inline-block;
 }
@@ -84,41 +141,45 @@ hr{
     color: white;
     width: 65px;
     height: auto;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
-    /*background-color: #ef7900;*/
-    background-color: salmon;
+    background-color: #3d0000;
     border-radius: 5px;
     text-align: center;
 }
 .cal-day{
     margin-top: 5px;
     text-align: center;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
 }
 .event-wrapper{
     display: inline-block;
     margin-left: 25px;
+    max-width: 800px;
+    bottom: 0;
 }
 .event-title{
     font-size: 20px;
-    color: white;
+    color: #2B2B2B;
     font-style: italic;
     width: 500px;
 }
 .event-info{
-    font-size: 16px;
-    color: white;
+    font-size: 20px;
+    color: #2B2B2B;
 }
 #footer{
-    background-color: black;
-    border-color: black;
-    font-size: 16px;
-}
-#facebook{
+    background-color: #3d0000;
+    border-color: #3d0000;
+    font-size: 18px;
+    margin-bottom: 0px;
 }
 
+/* OUR TEAM */
+#team{
+    background-color: grey;
+}
 
 
 
