@@ -26,9 +26,9 @@ hr{
     border-color: #3d0000;
 }
 /**********NEW: *********/
-section{ 
+/*section{ 
     min-height: 100vh;
-}
+}*/
 #intro-image{
     /*background: #565656;
     background-color: rgb(86, 86, 86);*/
@@ -39,7 +39,7 @@ section{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 
 
