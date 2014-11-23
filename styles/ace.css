@@ -39,7 +39,7 @@ hr{
     top: 0;
     left: 0;
     width: 100%;
-    height: 90%;
+    height: 100%;
 }
 
 
@@ -49,13 +49,13 @@ hr{
     /*background-color: #3d0000;*/
     border-color: transparent;
     border-radius: 0;
-    background: transparent;
+    background: #3d0000;
 } 
 /*NAVBAR NAME - ACADEMIC CONNECTION OF ENGINEERS*/
 #nav-name{
     margin-top: 8px;
     font-family: Blessed;
-    font-size: 55px;
+    font-size: 48px;
     font-weight: 400;
     letter-spacing: 3px;
     color: #F6F6F6;
@@ -65,7 +65,7 @@ hr{
 .nav-link{
     margin-top: 8px;
     color: #F6F6F6 !important;
-    font-size: 40px;
+    font-size: 36px;
     letter-spacing: 3px;
     font-family: Blessed;
 }
