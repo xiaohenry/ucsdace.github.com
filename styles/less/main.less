@@ -1,0 +1,424 @@
+/* CUSTOM COLORS */
+@grey: #eeeeee;
+@dark-grey: #383838;
+@pastel-red: #de6868;
+@burgundy: #3d0000;
+@white: #ffffff;
+/* update Bootstrap icon paths */
+@icon-font-path: "../../fonts/";
+@icon-font-name: "glyphicons-halflings-regular";
+
+
+/***** NATIVE STYLING ******
+-------------------------------/
+-------------------------------/
+-------------------------------/
+*/
+body{
+    background-color: @grey;
+
+    // background-image: url("../../img/rob.jpg");
+    font-family: Economica;
+
+    letter-spacing: 0.6px;
+}
+div{
+    display: block;
+}
+h1, h2, h3, h4, h5{
+    color: @burgundy;
+}
+h1{
+    font-size: 45px;
+}
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size: 30px;
+}
+h4{
+    font-size: 24px;
+}
+h5{
+    font-size: 20px;
+}
+hr.section-break{
+    margin-top: 75px;
+    margin-bottom: 75px;
+    border-color: @white;
+}
+hr{
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    text-decoration: none;
+}
+ul li{
+    list-style-type: none;
+    list-style-position: outside;
+}
+section{
+    height: 100%;
+    position: relative;
+    display: block;
+}
+// img{
+//     display: block;
+// }
+
+.visible{
+    visibility: visible;
+}
+.hidden{
+    visibility: hidden;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.inline{
+    display: inline;
+}
+.wrapper{
+    // margin: 0 auto;
+}
+/* FONT AWESOME */
+.fa-bullets{
+    font-size: 20px;
+}
+
+
+// .fa-links{
+//     font-size: 36px;
+//     color: @pastel-red;
+// }
+
+
+/***** NAVIGATION ****** 
+-------------------------------/
+-------------------------------/
+-------------------------------/
+*/
+
+/**** PREVENT NAVBAR COLLAPSE ****/
+// .navbar-collapse.collapse {
+// display: block!important;
+// }
+
+// .navbar-nav>li, .navbar-nav {
+// float: left !important;
+// }
+
+// .navbar-nav.navbar-right:last-child {
+// margin-right: -15px !important;
+// }
+
+// .navbar-right {
+// float: right!important;
+// }
+
+// @media (min-width: 768px){
+//     .nav-collapse, .nav-collapse.collapse {
+//         overflow: visible;
+//     }   
+//     .navbar .navbar-toggle {
+//         display: none;
+//     }   
+// }
+// @media (max-width: 979px){
+//     .nav-collapse, .nav-collapse.collapse {
+//         overflow: visible;
+//     }   
+//     .navbar .navbar-toggle {
+//         display: none;
+//     }   
+// }
+
+/**** ---------------------- ****/
+
+.navbar{
+     background-color: @white;
+     border-color: @grey;
+    // background-color: @main-color;
+    // border-color: @main-color;
+    height: 70px;
+    border-radius: 0 0 5px 5px;
+}
+.navbar-header > a{
+    font-size: 45px;
+    color: @pastel-red !important;
+    // color: @grey !important;
+    margin-top: 10px;
+    margin-left: 50px !important;
+}
+.navHeaderCollapse{
+    background-color: white;
+}
+.nav-link{
+    font-size: 36px;
+    color: @pastel-red;
+    //color: @grey !important;
+    padding-left: 7px !important;
+}
+.nav-link:hover{
+    color: @burgundy;
+}
+
+// .navbar-header:hover{
+//     color: @burgundy;
+// }
+
+// .navbar-fixed-top {
+//     top: -20px;
+// }
+// .navbar-fixed-top, .navbar-fixed-bottom {
+//   position: relative; /* this can also be static */
+// }
+
+
+
+/****** ABOUT US ******
+-------------------------------/
+-------------------------------/
+-------------------------------/
+*/
+#about-us-section{
+    position: relative;
+    margin-top: 120px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    h1{
+        margin-bottom: 50px;
+    }
+    p{
+        font-size: 30px;
+    }
+    p:nth-child(2){
+        margin-bottom: 50px;
+    }
+    p:nth-child(3){
+        margin-bottom: 25px;
+    }
+}
+.button{
+    margin: 0 auto;
+    border-radius: 4px;
+}    
+.facebook{
+    background-color: @pastel-red;
+    font-size: 30px;
+    //color: @grey;
+    width: 210px;
+    height: 50px;
+    // margin-top: 50px;
+}
+
+/****** OUR MISSION ******
+-------------------------------/
+-------------------------------/
+-------------------------------/
+*/
+#mission-section{
+    width: 1000px;
+    height: 450px;
+    margin: 0 auto;
+}
+#mission-section > div {
+        h1{
+            margin-bottom: 50px;
+        }
+        
+        // width: 100%;
+        //our mission div
+        div:nth-child(1){
+            width: 50%;
+            min-width: 400px;
+            margin-left: 0px;
+            // margin-top: 50px;
+            h2{
+                width: 100%;
+                text-align: center;
+                margin-left: 25px;
+            }
+            ul{
+                li{
+
+                    text-align: left;
+                }
+            }
+        }
+        //exec image
+        div:nth-child(2){
+            // margin-top: 50px;
+            width: 50%;
+        }
+        p{
+            font-size: 24px;
+            display: inline;
+        }
+    }
+
+/****** CALENDAR OF EVENTS ******
+-------------------------------/
+-------------------------------/
+-------------------------------/
+*/
+#events-section{
+    // height: 400px;
+    // width: 1000px;
+    height: 450px;
+}
+.events-wrapper{
+    margin: 0 auto;
+    width: 1000px;
+}
+#upcoming-events{
+    background-color: @white;
+    height: 458px;
+    width: 315px;
+    border-radius: 5px;
+}
+#event-description{
+    margin: 0 auto;
+    background-color: @white;
+    width: 675px;
+    height: 458px;
+    border-radius: 5px;    
+    div:nth-child(1){
+        margin-top: 35px;
+    }
+    // h3{
+    //     margin-bottom: 0 !important;
+    // }
+}
+.event{
+    height: 125px;
+    hr{
+        margin: 0;
+    }
+    h3{
+        margin-top: 12px;
+        color: @dark-grey;
+    }
+    h4{
+        margin: 5px;
+        color: @burgundy;
+    }
+}
+.event:hover{
+    background-color: @pastel-red;
+    cursor: pointer;
+}
+.event-content{
+    height: 100px;
+    margin-left: 10px;
+    p, h3{
+        width: 550px; // CHANGE
+        margin: 0 auto;
+        margin-bottom: 5px;
+    }
+    p{
+        font-size: 24px;
+    }
+}
+
+/****** OUR TEAM SECTION ******
+-------------------------------/
+-------------------------------/
+-------------------------------/
+*/
+#team-section{
+    height: 1800px;
+    // width: 1000px;
+    // figure{
+    //     display: block;
+    //     width: 210px;
+    //     height: 280px;
+    //     margin: 0 auto;
+    //     padding: 0;
+    // }
+}
+
+#team-wrapper{
+    margin: 0 auto;
+    height: 1500px; 
+    width: 800px;
+    // background-color: @dark-grey;
+    padding-left: 0;
+    padding-right: 0;
+   
+}
+.team-photo{
+    // position: relative;
+    display: inline-block;
+    // background-color: @pastel-red;
+    //Width : Height ratio - 4:3
+    width: 238px;
+    height: 380px; //280+30 for Name and title
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    img{
+        display: block;
+        // position: absolute;
+        width: 238px;
+        height: 320px;
+        border-radius: 5px;
+        margin: 0;
+        margin-bottom: 10px;
+        padding: 0;
+    } 
+    h4{
+        // display: block;
+        // position: absolute;
+        font-weight: 900;
+        display: block;
+        margin: 0;
+        padding: 0;
+    } 
+    p{
+        // display: block;
+        // position: absolute;
+        margin: 0;
+        padding: 0;
+        // background-color: @grey;
+        font-size: 22px;
+    } 
+}
+
+
+/****** SPONSOR ******
+-------------------------------/
+-------------------------------/
+-------------------------------/
+*/
+#sponsor-section{
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
