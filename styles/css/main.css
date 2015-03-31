@@ -204,6 +204,9 @@ section {
 #event-description div:nth-child(1) {
   margin-top: 35px;
 }
+#event-description div:nth-child(2) {
+  margin-top: 15px;
+}
 .event {
   height: 125px;
 }
